@@ -2,42 +2,42 @@ from math import sqrt, e, tan, log, sin, cos, fabs, pow
 # Вариант 12
 
 def func_1(x, y, z):
-    result = pow(x, 2) + fabs(y) + ((pow(x, 3) - y)/(74*x - log(z) + 18)) \
-             + ((93*pow(x, 6) - pow(x, 3))/(pow(x, 8)/56 - pow(x, 7)))
+    result = pow((fabs(x) + log(y) + 82), 6) - tan(z) + tan(84 * pow(z, 5) - pow(x, 7)/41) \
+             + fabs(y) - 24 - (pow(x, 7) + pow(z, 3))
     return result
 
 
 print('\nTASK #1')
-x = -63
-y = -48
-z = 73
+x = -5
+y = 22
+z = -30
 print(f'Test #1: func({x}, {y}, {z})={func_1(x,y,z)}')
 
-x = -50
-y = 39
-z = 86
+x = -28
+y = 54
+z = 90
 print(f'Test #2: func({x}, {y}, {z})={func_1(x,y,z)}')
 
 
 def func_2(x):
-    if x < -10:
-        result = 24 * (28*pow(x, 8) + tan(x) + pow(x, 3))
-    elif -10 <= x < 1:
-        result = 74 * x - log(x) + 18
-    elif 1 <= x < 11:
-        result = 25 * pow((63 * pow(x, 2) + 30 * pow(x, 4)), 2) + cos(x)
-    elif 11 <= x < 35:
-        result = pow((log(x) - 57 * pow(x, 7) + 89), 2) - pow(e, x)
-    elif x >= 35:
-        result = pow(x, 2) + fabs(x)
+    if x < -61:
+        result = pow(e, (fabs(x) + log(x) + 82)) + tan(87 * pow(x, 8))
+    elif -61 <= x < -50:
+        result = x*x + tan(x)
+    elif -50 <= x < -5:
+        result = 44 * pow(x, 8) + 43 * pow(x, 5) - 58
+    elif -5 <= x < 50:
+        result = pow((pow(x, 5) - pow(x, 7)/99), 3) + 23 * pow(x, 4)
+    elif x >= 50:
+        result = 65 * pow(x, 7) + 34 * pow(x, 4) - 85
     else:
         return 'condition is wrong'
     return result
 
 print('\nTASK #2')
-x = 72
+x = -31
 print(f'Test #1: func({x})={func_2(x)}')
-x = 64
+x = 92
 print(f'Test #2: func({x})={func_2(x)}')
 
 
